@@ -98,13 +98,23 @@
     .enroll-btn:hover {
       background-color: #900;
     }
-
+  #reviewsList{
+    margin: 0;
+      padding: 0;
+      background-image: url('https://storage.googleapis.com/kdawpmedia/our-team.jpg');
+      background-size: cover;         /* чтобы изображение покрывало весь экран */
+      background-position: center;    /* центрируем */
+      background-repeat: no-repeat;   /* не повторяется */
+      height: auto;                  /* 100% высоты экрана */
+      width: 100%;
+  }
   </style>
 </head>
 <body>
 
   <!-- Главная -->
   <section id="home" class="active">
+    
     <div class="lang-switch">
       <select onchange="switchLanguage(this.value)">
         <option value="ru">Рус</option>
@@ -129,6 +139,7 @@
     <div class="message" id="reviewMessage"></div>
 
     <h3>Отзывы:</h3>
+    
     <div id="reviewsList"></div>
   </section>
 
@@ -155,7 +166,7 @@
     <h2 data-ru="Игра" data-kz="Ойын">Игра</h2>
      <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden;">
   <iframe src="https://gd.games/games/05a04141-1075-4603-8314-520a8a97a25a"
-    style="position: absolute; top: -50px; left: 0; width: 100%; height: calc(100% + 250px); border: none;"
+    style="position: absolute; top: -50px; left: 0; width: 100%; height: calc(100% + 50px); border: none;"
     allowfullscreen></iframe>
 </div>
 
@@ -172,16 +183,16 @@
     
     <h2 data-ru="Курсы" data-kz="Курстар">Курсы</h2>
 
-  <div class="course-card"><img width="100%" src="https://avatars.mds.yandex.net/i?id=b93d6e6c145730e8139d7865850a258e_l-9083254-images-thumbs&n=13" alt="" /><h3>Айгүл — Английский для начинающих</h3><p>Опыт: 5 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://image.winudf.com/v2/image/bW9iaS5hbmRyb2FwcC5wcm9zcGVyaXR5YXBwcy5jNTExMV9zY3JlZW5fN18xNTI0MDQxMDUwXzAyMQ/screen-7.jpg?fakeurl=1&type=.jpg" alt="" /><h3>Руслан — Немецкий для начинающих</h3><p>Опыт: 4 года</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://avatars.mds.yandex.net/i?id=9c5c014b63d55d278b8648f8f3280cc7_l-5238112-images-thumbs&n=13" alt="" /><h3>Салтанат — Французский разговорный</h3><p>Опыт: 6 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://img.freepik.com/photos-gratuite/positive-prof-maths-s-appuyer-bureau_23-2148201034.jpg?w=2000" alt="" /><h3>Дамир — Подготовка к IELTS</h3><p>Опыт: 7 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://cdn.culture.ru/images/3b375d95-8327-5f05-b091-9ff1c09b62d6" alt="" /><h3>Надежда — Испанский для начинающих</h3><p>Опыт: 3 года</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://avatars.mds.yandex.net/i?id=580b395bcb25d9f7172d31d693de6f1c_l-5099371-images-thumbs&n=13" alt="" /><h3>Алишер — Китайский язык (HSK)</h3><p>Опыт: 5 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://avatars.mds.yandex.net/i?id=57d828bab3e0a64b00a7a535834303fd_l-5209452-images-thumbs&n=13" alt="" /><h3>Лаура — Английский для детей</h3><p>Опыт: 6 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://avatars.mds.yandex.net/i?id=b18354b36d7bfeb7bf94023b63a21f8a_l-5661324-images-thumbs&n=13" alt="" /><h3>Ермек — Турецкий для путешествий</h3><p>Опыт: 4 года</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://avatars.mds.yandex.net/i?id=8008352b56173225367e06d445a9dda9_l-5487857-images-thumbs&n=13" alt="" /><h3>Асель — Японский язык</h3><p>Опыт: 5 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
-  <div class="course-card"><img width="100%" src="https://avatars.mds.yandex.net/i?id=c80128a04b952cc745eb3d80a3b6dd91_l-12488046-images-thumbs&n=13" alt="" /><h3>Жанат — Подготовка к TOEFL</h3><p>Опыт: 8 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://avatars.mds.yandex.net/i?id=b93d6e6c145730e8139d7865850a258e_l-9083254-images-thumbs&n=13" alt="" /><h3>Айгүл — Английский для начинающих</h3><p>Опыт: 5 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://image.winudf.com/v2/image/bW9iaS5hbmRyb2FwcC5wcm9zcGVyaXR5YXBwcy5jNTExMV9zY3JlZW5fN18xNTI0MDQxMDUwXzAyMQ/screen-7.jpg?fakeurl=1&type=.jpg" alt="" /><h3>Руслан — Немецкий для начинающих</h3><p>Опыт: 4 года</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://avatars.mds.yandex.net/i?id=9c5c014b63d55d278b8648f8f3280cc7_l-5238112-images-thumbs&n=13" alt="" /><h3>Салтанат — Французский разговорный</h3><p>Опыт: 6 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://img.freepik.com/photos-gratuite/positive-prof-maths-s-appuyer-bureau_23-2148201034.jpg?w=2000" alt="" /><h3>Дамир — Подготовка к IELTS</h3><p>Опыт: 7 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://cdn.culture.ru/images/3b375d95-8327-5f05-b091-9ff1c09b62d6" alt="" /><h3>Надежда — Испанский для начинающих</h3><p>Опыт: 3 года</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://avatars.mds.yandex.net/i?id=580b395bcb25d9f7172d31d693de6f1c_l-5099371-images-thumbs&n=13" alt="" /><h3>Алишер — Китайский язык (HSK)</h3><p>Опыт: 5 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://avatars.mds.yandex.net/i?id=57d828bab3e0a64b00a7a535834303fd_l-5209452-images-thumbs&n=13" alt="" /><h3>Лаура — Английский для детей</h3><p>Опыт: 6 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://avatars.mds.yandex.net/i?id=b18354b36d7bfeb7bf94023b63a21f8a_l-5661324-images-thumbs&n=13" alt="" /><h3>Ермек — Турецкий для путешествий</h3><p>Опыт: 4 года</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://avatars.mds.yandex.net/i?id=8008352b56173225367e06d445a9dda9_l-5487857-images-thumbs&n=13" alt="" /><h3>Асель — Японский язык</h3><p>Опыт: 5 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
+  <div class="course-card"><img style="display: block; margin: 0 auto;" height="150px" width="50%" src="https://avatars.mds.yandex.net/i?id=c80128a04b952cc745eb3d80a3b6dd91_l-12488046-images-thumbs&n=13" alt="" /><h3>Жанат — Подготовка к TOEFL</h3><p>Опыт: 8 лет</p><button class="enroll-btn" onclick="showSection('home')">Записаться</button></div>
   </section>
 
   <!-- Учителя -->
