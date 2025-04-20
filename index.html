@@ -111,6 +111,10 @@
   marquee{
     background-color: #E98484;
   }
+  .faq{max-width:700px;margin:30px auto;font-family:sans-serif}
+.q{cursor:pointer;padding:10px;border-bottom:1px solid #ccc;display:flex;justify-content:space-between;color:#d60000;font-weight:bold}
+.a{max-height:0;overflow:hidden;transition:.3s;color:#444;padding:0 10px}
+.q.open+.a{max-height:200px;padding:10px}
   </style>
 </head>
 <body>
@@ -158,6 +162,18 @@
     <h3>Отзывы:</h3>
     
     <div id="reviewsList"></div>
+    <hr />
+    <div class="faq">
+      <h1><font color="black">FAQ - <font color="#C1321C">Вопросы и Ответы<font color="black">:</font></font></font></h1>
+  <div class="q" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open')">Как зарегистрироваться?<span><font color="black">+</font></span></div>
+  <div class="a">Заполните форму заявки и нажмите отправить.</div>
+
+  <div class="q" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open')">Сколько стоит обучение?<span><font color="black">+</font></span></div>
+  <div class="a">Бесплатно. Платный курс — от 3000₸.</div>
+
+  <div class="q" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open')">Как работает рефералка?<span><font color="black">+</font></span></div>
+  <div class="a">За друга — 5000₸. Ссылка в профиле.</div>
+</div>
   </section>
 
   <!-- Новости -->
