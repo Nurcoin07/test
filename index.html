@@ -115,10 +115,35 @@
 .q{cursor:pointer;padding:10px;border-bottom:1px solid #ccc;display:flex;justify-content:space-between;color:#d60000;font-weight:bold}
 .a{max-height:0;overflow:hidden;transition:.3s;color:#444;padding:0 10px}
 .q.open+.a{max-height:200px;padding:10px}
+.promo-image-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .promo-image-container img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .promo-image-container img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  }
+
+  .promo-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+  }
   </style>
 </head>
 <body>
-
   <!-- Главная -->
   <section id="home" class="active">
     
@@ -143,6 +168,11 @@
     <img width="100%" src="https://i.postimg.cc/GhcKPDxJ/image.png" alt="" />
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7ac77106004e74f250ab12269e828e4cb4b15ad8088f2f3e84dbf16d00358515&amp;source=constructor" width="100%" height="267" frameborder="0"></iframe>
     <br /><br />
+    <div class="promo-image-container">
+  <div class="promo-title">🎉 Наши лучшие предложения по курсам английского!</div>
+  <img src="https://i.postimg.cc/Dzm09L9T/Chat-GPT-Image-20-2025-15-13-52.png" alt="Акционные цены на курсы английского">
+</div>
+<hr />
     <div>
       
     
